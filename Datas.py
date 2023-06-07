@@ -12,3 +12,6 @@ def data_from_env():
     # print(aws_secret_access_key)
     # print(aws_s3_bucket_name)
     return aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name
+
+if __name__ == "__main__":
+    print(data_from_env())

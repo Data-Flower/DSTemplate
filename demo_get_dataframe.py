@@ -34,3 +34,6 @@ def demo_case2():
     
     print(df)
 
+if __name__ == "__main__":
+    demo_case1()
+    demo_case2()

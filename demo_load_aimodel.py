@@ -9,3 +9,6 @@ def demo_load_aiModel():
 
     Loads.load_AIModel(aimodel, filename, 
                        aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name)
+
+if __name__ == "__main__":
+    demo_load_aiModel()
