@@ -10,10 +10,12 @@ def demo_case1():
 
     # case 1: 특정 날짜만 가져오기
     date1 = '20230403'
-    date2 = None    
+    date2 = None
+    item = '고구마'
+    grade = '특(1등)'
 
     df = get_dataframe_by_dates(aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name, 
-                           date1, date2)
+                           date1, date2, item, grade)
 
     print(df)
 
@@ -27,10 +29,12 @@ def demo_case2():
 
     # case 2: 시작 날짜부터 종료 날짜까지 가져오기
     date1 = '20230403'
-    date2 = '20230407'    
+    date2 = '20230407'
+    item = '고구마'
+    grade = '특(1등)'
 
     df = get_dataframe_by_dates(aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name, 
-                           date1, date2)
+                           date1, date2, item, grade)
     
     print(df)
 
