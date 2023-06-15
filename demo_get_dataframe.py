@@ -17,6 +17,8 @@ def demo_case1():
     df = get_dataframe_by_dates(aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name, 
                            date1, date2, item, grade)
 
+    df.to_csv('data/df.csv') # custom
+    
     print(df)
 
 def demo_case2():
@@ -28,16 +30,17 @@ def demo_case2():
     aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name = Datas.data_from_env()
 
     # case 2: 시작 날짜부터 종료 날짜까지 가져오기
-    date1 = '20230403'
-    date2 = '20230407'
+    date1 = '20210101' #custom
+    date2 = '20230601' #custom
     item = '고구마'
     grade = '특(1등)'
 
     df = get_dataframe_by_dates(aws_access_key_id, aws_secret_access_key, aws_s3_bucket_name, 
                            date1, date2, item, grade)
     
+    df.to_csv('./data/df.csv') # custom
     print(df)
 
 if __name__ == "__main__":
-    demo_case1()
+    # demo_case1()
     demo_case2()
